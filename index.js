@@ -17,6 +17,8 @@ var twitter = new twitterAPI({
  * number of tweets per second depends on topic popularity
  **/
 
+app.use(express.static('public'));
+
 app.get('/tweets.json', function(req, res) {
     twitter.get('search/tweets', { q: '%23react', result_type: 'recent' }, function(error, tweet, response) {
         if (error) {

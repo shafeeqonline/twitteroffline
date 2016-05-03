@@ -32,5 +32,5 @@ app.get('/tweets.json', function(req, res) {
 });
 
 app.listen(process.env.PORT || 4000, function() {
-    console.log("Prompter listening on port 3000.");
+    console.log("Prompter listening on port." + process.env.PORT);
 });

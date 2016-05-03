@@ -3,7 +3,6 @@ var cacheName = 'offlinetwitter';
 var filesToCache = [
   '/',
   '/index.html',
-  '/offline.html',
   'service-worker.js',
   'bundle.js',
   '/tweets.json'

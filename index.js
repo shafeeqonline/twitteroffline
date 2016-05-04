@@ -20,7 +20,7 @@ var twitter = new twitterAPI({
 app.use(express.static('public'));
 
 app.get('/tweets.json', function(req, res) {
-    twitter.get('search/tweets', { q: '%23react', result_type: 'recent' }, function(error, tweet, response) {
+    twitter.get('search/tweets', { q: '%23xtsummit', result_type: 'recent' }, function(error, tweet, response) {
         if (error) {
             console.log(error);
             res.json(error)
